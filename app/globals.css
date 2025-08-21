@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+    --*: initial;
+    --spacing: 0.08px;
+    --color-black: #000000;
+    --color-teal-dark: #31c3bd;
+    --color-teal-light: #65e9e4;
+    --color-orange-dark: #f2b137;
+    --color-orange-light: #ffc860;
+    --color-green-dark: #1a2a33;
+    --color-green-light: #1f3641;
+    --color-gray-dark: #a8bfc9;
+    --color-gray-light: #dbe8ed;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer utilities {
+    .text-heading-l {
+        /* Outfit, bold, 40px, 2.5px kerning */
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        letter-spacing: 0.15625rem;
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    .text-heading-m {
+        /* Outfit, bold, 24px, 1.5px kerning */
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 0.09375rem;
+    }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    .text-heading-s {
+        /* Outfit, bold, 20px, 1.25px kerning */
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+        letter-spacing: 0.078125rem;
+    }
+
+    .text-heading-xs {
+        /* Outfit, bold, 16px, 1px kerning */
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.0625rem;
+    }
+
+    .text-body {
+        /* Outfit, medium, 14px, 0.8px kerning */
+        font-family: "Outfit", sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 0.05rem;
+    }
 }
