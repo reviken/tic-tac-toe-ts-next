@@ -1,7 +1,7 @@
 import { Button } from "@headlessui/react";
 import XIcon from "./ui/XIcon";
 import OIcon from "./ui/OIcon";
-import { Mark } from "@/lib/model";
+import { Mark } from "@/lib/game";
 
 type MarkButtonClickCallback = () => void;
 
